@@ -11,8 +11,8 @@ Number of lines of code and the tool used to count it: 110098 NLOC
 Programming language: Python
 
 Basic installment guide:
-- `pip install sphinx`
-- `pip install defusedxml`
+1. `pip install sphinx`
+2. `pip install defusedxml`
 
 ## Coverage measurement
 
