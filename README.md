@@ -8,7 +8,7 @@ URL: https://github.com/sphinx-doc/sphinx
 
 Number of lines of code and the tool used to count it: 110098 NLOC
 
-Programming language: <TODO>
+Programming language: Python
 
 ## Coverage measurement
 
