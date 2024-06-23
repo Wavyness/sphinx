@@ -2,11 +2,11 @@
 
 ## Project chosen
 
-Name: <TODO>
+Name: Sphinx
 
-URL: <TODO>
+URL: https://github.com/sphinx-doc/sphinx
 
-Number of lines of code and the tool used to count it: <TODO>
+Number of lines of code and the tool used to count it: 110098 NLOC
 
 Programming language: <TODO>
 
