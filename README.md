@@ -18,7 +18,11 @@ Basic installment guide:
 
 ### Existing tool
 
-<Inform the name of the existing tool that was executed and how it was executed>
+We used the coverage tool Pytest.
+
+Pytest execution guide:
+1. Go to the main directory
+2. Execute: `pytest tests --cov=sphinx`
 
 <Show the coverage results provided by the existing tool with a screenshot>
 
