@@ -24,6 +24,13 @@ Pytest execution guide:
 1. Go to the main directory
 2. Execute: `pytest tests --cov=sphinx`
 
+### Screenshots
+![Screenshot part 1](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_pytest_overall_coverage_1.png)
+![Screenshot part 2](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_pytest_overall_coverage_2.png)
+![Screenshot part 3](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_pytest_overall_coverage_3.png)
+![Screenshot part 4](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_pytest_overall_coverage_4.png)
+![Screenshot part 5](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_pytest_overall_coverage_5.png)
+
 <Show the coverage results provided by the existing tool with a screenshot>
 
 ### Your own coverage tool
