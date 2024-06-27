@@ -114,13 +114,22 @@ class SphinxParallelError(SphinxError):
         return self.message
 
 
+
+branch_coverage = {
+    "branch_501": False,
+    "branch_502": False,
+}
+
+
 class PycodeError(Exception):
     """Pycode Python source code analyser error."""
 
     def __str__(self) -> str:
         res = self.args[0]
         if len(self.args) > 1:
+            branch_coverage["branch_501"] = True 
             res += ' (exception was: %r)' % self.args[1]
+        branch_coverage["branch_502"] = True
         return res
 
 
@@ -136,3 +145,18 @@ class FiletypeNotFoundError(Exception):
     """Raised by get_filetype() if a filename matches no source suffix."""
 
     pass
+
+
+def print_coverage():
+    for branch, hit in branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+
+
+error_one_arg = PycodeError("argument 1")
+print(str(error_one_arg))
+print_coverage()
+
+error_two_args = PycodeError("argument 1", "argument 2")
+print(str(error_two_args))
+print_coverage()
+

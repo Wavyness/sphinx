@@ -146,12 +146,28 @@ def class_doc_from_option(arg: Any) -> str | None:
 SUPPRESS = object()
 
 
+branch_coverage = {
+    "branch#301": False,
+    "branch#302": False
+}
+
 def annotation_option(arg: Any) -> Any:
     if arg in (None, True):
+        branch_coverage["branch#301"] = True
         # suppress showing the representation of the object
         return SUPPRESS
     else:
+        branch_coverage["branch#302"] = True
         return arg
+    
+def print_coverage():
+    for branch, hit in branch_coverage. items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+        
+result = annotation_option(True)
+print_coverage()
+result = annotation_option(False)
+print_coverage()
 
 
 def bool_option(arg: Any) -> bool:
