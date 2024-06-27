@@ -101,7 +101,7 @@ Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/co
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
 
-### Group member Ismail
+### Group member Dimitri
 
 Test 1 `test_colourise.py`
 Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/36b4b7132fde923dbf8dd9605bcc769849114c2c
