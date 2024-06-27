@@ -146,8 +146,7 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
 
-Explanation:
-The coverage got improved by 100%. We achieved this by implementing the instrumentation to the jobs_argument. With this we could see for which specific inputs the branches could be hit. The branches would be hit when the parameter is equal to "auto". If it is not equal to "auto" it would go either go to branch_3 if jobs is smaller or equal to 0, or branch_4 if it is bigger than 0. Based on this we could add testcases where the inputs are auto, 123 and 0. Based on this we added asserts based on the correct values/output. Due to the use of argparse.argumentTypeError you can see a error when the instrumentation hits branch_3. This however shows that it indeed hits the third branch.
+Explanation: The coverage got improved by 100%. We achieved this by implementing the instrumentation to the jobs_argument. With this we could see for which specific inputs the branches could be hit. The branches would be hit when the parameter is equal to "auto". If it is not equal to "auto" it would go either go to branch_3 if jobs is smaller or equal to 0, or branch_4 if it is bigger than 0. Based on this we could add testcases where the inputs are auto, 123 and 0. Based on this we added asserts based on the correct values/output. Due to the use of argparse.argumentTypeError you can see a error when the instrumentation hits branch_3. This however shows that it indeed hits the third branch.
 
 Test 2 `test_run_make_mode.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/fb1b43c45a221e09c32b29a2425fb5f57bcf4b32)
@@ -161,6 +160,8 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_make_mode.png)
+
+Explanation: The coverage got improved by 100%. We achieved this by implementing the instrumentation to run_make_mode(). With this we could see that to hit the different branches the parameter should be sequence. This sequence should be less than 3, bigger than 3 or should be valued true with he use of hasattr(). Based on this we could add testcases where the inputs are gettext and gettext together with the directory to the conf.py file and the directory to the destination.
 
 ### Group member Dimitri Liauw
 
@@ -209,7 +210,7 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_annotation_option.png)
 
-Explanation: the code coverage improved by 100%. The first step was to make the instrumentation to see which branches it would hit. And also which values would make sure it would hit.
+Explanation: The code coverage improved by 100%. The first step was to make the instrumentation to see which branches it would hit. And also which values would make sure it would hit.
 After that, the new test file was created with the information of the branch test. The test used assertions to control the results.
 
 Test 2 `test_extensionerror_category.py`
@@ -225,7 +226,7 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_extensionerror.png)
 
-Explanation: the code coverage of the second function was also improved by 100%. The way the second function was improved was almost the same as the first one. There was again no test file testing the function so a new test file was created to make sure. The function was called and tested based on the branch test performed.
+Explanation: The code coverage of the second function was also improved by 100%. The way the second function was improved was almost the same as the first one. There was again no test file testing the function so a new test file was created to make sure. The function was called and tested based on the branch test performed.
 
 ### Overall
 
