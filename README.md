@@ -161,7 +161,7 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_make_mode.png)
 
-Explanation: The coverage got improved by 100%. We achieved this by implementing the instrumentation to run_make_mode(). With this we could see that to hit the different branches the parameter should be sequence. This sequence should be less than 3, bigger than 3 or should be valued true with he use of hasattr(). Based on this we could add testcases where the inputs are gettext and gettext together with the directory to the conf.py file and the directory to the destination.
+Explanation: The coverage got improved by 100%. We achieved this by implementing the instrumentation to run_make_mode(). With this we could see that to hit the different branches the parameter should be sequence. This sequence should be less than 3, bigger than 3 or should be valued true with he use of hasattr(). Based on this we could add testcases where the inputs are gettext or 3 letter which are not valid.
 
 ### Group member Dimitri Liauw
 
