@@ -35,6 +35,12 @@ if TYPE_CHECKING:
         def write(self, text: str, /) -> int | None:
             ...
 
+branch_coverage = {
+"branch_1": False,  
+"branch_2": False,  
+"branch_3": False,
+"branch_4": False 
+}
 
 def handle_exception(
     app: Sphinx | None, args: Any, exception: BaseException, stderr: TextIO = sys.stderr,
@@ -95,21 +101,32 @@ def handle_exception(
                   file=stderr)
 
 
+
 def jobs_argument(value: str) -> int:
-    """
-    Special type to handle 'auto' flags passed to 'sphinx-build' via -j flag. Can
-    be expanded to handle other special scaling requests, such as setting job count
-    to cpu_count.
-    """
     if value == 'auto':
+        branch_coverage["branch_1"] = True
         return multiprocessing.cpu_count()
     else:
+        branch_coverage["branch_2"] = True
         jobs = int(value)
         if jobs <= 0:
+            branch_coverage["branch_3"] = True
             raise argparse.ArgumentTypeError(__('job number should be a positive number'))
         else:
+            branch_coverage["branch_4"] = True
             return jobs
+        
+def print_coverage():
+    for branch, hit in branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
 
+def test_branches(value: str):
+    jobs_argument(value)
+    print_coverage()
+
+test_branches("auto")
+test_branches("123")
+test_branches("-123")
 
 def get_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
