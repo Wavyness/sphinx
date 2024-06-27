@@ -177,6 +177,8 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_colourise.png)
 
+Explanation: the code coverage went from 0% to 100%, thus an improvement of 100%. The test calls the function which is tested twice where one call has the colour disabled and the other one enabled. Therefore, the test covers all (2) branches, making a code coverage of 100%.
+
 Test 2 `test_validate_html_logo.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/9c2d41e7054d75dcf06ad31c8141a2c33273205d)
 
@@ -189,6 +191,8 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_validate_html_logo.png)
+
+Explanation: the code coverage went from 40% to 100%, thus an improvement of 60%. The function handles one branch where a html logo is configured and one branch where no html logo is configured. By doing this all branches are covered, making a code coverage of 100%.
 
 ### Group member Riesan Hansraj
 
