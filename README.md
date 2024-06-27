@@ -98,22 +98,26 @@ Pytest execution guide:
 Test 1 `test_terminal_support.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/183bca33652a1c7af6003b1070b249b51dd2a517)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_terminalsupports.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_terminal_supports.png)
 
 Test 2 `test_pycodeError_arg.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/2fe72f30421129f6e4163e64b330bf291707292c)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_test_pycode_error.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_pycode_error.png)
 
@@ -122,22 +126,26 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 Test 1 `test_jobsarguments.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/7693264a51fad091fd77c4d30271b59df69d9738)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_jobsarguments.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
 
 Test 2 `test_run_make_mode.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/fb1b43c45a221e09c32b29a2425fb5f57bcf4b32)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_make_mode.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_make_mode.png)
 
@@ -146,22 +154,26 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 Test 1 `test_colourise.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/36b4b7132fde923dbf8dd9605bcc769849114c2c)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_colourise.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_colourise.png)
 
 Test 2 `test_validate_html_logo.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/9c2d41e7054d75dcf06ad31c8141a2c33273205d)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_validate_html_logo.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_validate_html_logo.png)
 
@@ -170,22 +182,26 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 Test 1 `test_annotation_option.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/2f0837c6198f25ca502821ec55e57cad0c50a85f)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_annotation_option.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_annotation_option.png)
 
 Test 2 `test_extensionerror_category.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/85899c0d236958b2d2dd3ad1b2caf486f706c151)
 
-#### Screenshot old coverage
+- Screenshot old coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_extensionerror.png)
 
-#### Screenshot new coverage
+- Screenshot new coverage
+
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_extensionerror.png)
 
