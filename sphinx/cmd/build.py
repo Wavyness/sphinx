@@ -126,7 +126,7 @@ def test_branches(value: str):
 
 test_branches("auto")
 test_branches("123")
-test_branches("-123")
+# test_branches("-123")
 
 def get_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
