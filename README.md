@@ -147,7 +147,7 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
 
 Explanation:
-The coverage got improved by 100%. We achieved this by implementing the instrumentation to the jobs_argument. With this, we could see for which specific inputs the branches could be hit. The branches would be hit when the parameter is equal to "auto". If it is not equal to "auto" it would go either go to branch_3 if jobs is smaller or equal to 0, or branch_4 if it is bigger than 0. Based on this we could add test cases where the inputs are auto, 123 and 0. Based on this we added asserts based on the correct values.
+The coverage got improved by 100%. We achieved this by implementing the instrumentation to the jobs_argument. With this we could see for which specific inputs the branches could be hit. The branches would be hit when the parameter is equal to "auto". If it is not equal to "auto" it would go either go to branch_3 if jobs is smaller or equal to 0, or branch_4 if it is bigger than 0. Based on this we could add testcases where the inputs are auto, 123 and 0. Based on this we added asserts based on the correct values/output. Due to the use of argparse.argumentTypeError you can see a error when the instrumentation hits branch_3. This however shows that it indeed hits the third branch.
 
 Test 2 `test_run_make_mode.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/fb1b43c45a221e09c32b29a2425fb5f57bcf4b32)
@@ -209,12 +209,8 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_annotation_option.png)
 
-Explanation:
-the code coverage improved by 100%.
-
-the first step was to make the instrumentation to see which branches it would hit. and also which values would make sure it would hit.
-after that. the new test file was created with the information of the branch test.
-the test used assertions to control the results.
+Explanation: the code coverage improved by 100%. The first step was to make the instrumentation to see which branches it would hit. And also which values would make sure it would hit.
+After that, the new test file was created with the information of the branch test. The test used assertions to control the results.
 
 Test 2 `test_extensionerror_category.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/85899c0d236958b2d2dd3ad1b2caf486f706c151)
@@ -229,21 +225,22 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_extensionerror.png)
 
-Explanation:
-the code coverage of the second function was also improved by 100%
-
-the way the second function was improved was almost the same as the first one.
-there was again no test file testing the function so a new test file was created to make sure 
-the function was called and tested based on the branch test performed.
+Explanation: the code coverage of the second function was also improved by 100%. The way the second function was improved was almost the same as the first one. There was again no test file testing the function so a new test file was created to make sure. The function was called and tested based on the branch test performed.
 
 ### Overall
 
-<Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)>
+This is the old coverage results by running the coverage tool pytest as mentioned in the beginning of the readme:
 
-<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group>
+![Old total coverage](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_pytest_overall_coverage_5.png)
+
+This is the new coverage results:
+
+![New total coverage](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_total_improvement.png)
 
 ## Statement of individual contributions
 
 A significant portion of our assignment was spent searching for the right project. This process took a lot of time due to numerous restrictions and the fact that many good projects were already taken. After weeks of searching together, we finally found a suitable project.
 
-Each team member identified and created two functions to instrument, and everyone also developed two tests for these functions. We communicated through out Discord, which helped us avoid communication issues and ensured that everyone contributed their fair share of work.
+Each team member identified two functions to instrument where every member made a test for each function identified. We communicated throughout Discord, which helped us avoid communication issues and ensured that everyone contributed their fair share of work.
+
+We want to thank you for looking at our assignment!
