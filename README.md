@@ -48,10 +48,6 @@ Pytest execution guide:
 
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_pycodeerror.prints.png)
 
-Explanation:
-The coverage improved from 0% to 100% so an improvement of 100%. The function was never called. The function is specifically a constructor of the class PycodeError.
-The function had a branch if statement that checked whether it had more than 1 argument. The other branch is that the if statement is not taken. The return value will then be different than the branch from the if statement. 
-
 #### Group member: Ismail Singopawiro
 - Function 1 `jobs_argument()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/6f1ef04a5424bf20970e3ab843d6a0fe5d87a608)
