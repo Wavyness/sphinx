@@ -70,13 +70,18 @@ Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name>
+Group member Nitesh
 
-<Test 1>
+Test 1 `test_terminal_support.py`
+Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/183bca33652a1c7af6003b1070b249b51dd2a517
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
+###Screenshot old coverage
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_terminalsupports.png)
 
-<Provide a screenshot of the old coverage results (the same as you already showed above)>
+###Screenshot new coverage
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_terminal_supports.png)
 
 <Provide a screenshot of the new coverage results>
 
