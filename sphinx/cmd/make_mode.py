@@ -56,6 +56,11 @@ BUILDERS = [
     ("",      "clean",       "to remove everything in the build directory"),
 ]
 
+branch_coverage = {
+"branch_401": False,  
+"branch_402": False,
+"branch_403": False
+}
 
 class Make:
     def __init__(self, srcdir: str, builddir: str, opts: Sequence[str]) -> None:
@@ -166,11 +171,26 @@ class Make:
 
 def run_make_mode(args: Sequence[str]) -> int:
     if len(args) < 3:
+        branch_coverage["branch_401"] = True
         print('Error: at least 3 arguments (builder, source '
               'dir, build dir) are required.', file=sys.stderr)
         return 1
     make = Make(args[1], args[2], args[3:])
     run_method = 'build_' + args[0]
     if hasattr(make, run_method):
+        branch_coverage["branch_402"] = True
         return getattr(make, run_method)()
+    branch_coverage["branch_403"] = True
     return make.run_generic_build(args[0])
+
+def print_coverage():
+    for branch, hit in branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+
+def test_branches(args: Sequence[str]):
+    run_make_mode(args)
+    print_coverage()
+
+test_branches(["gettext"])
+test_branches(["gettext", "../tests/roots/test-epub-anchor-id", "../build"])
+test_branches(["a", "b", "c"])
