@@ -70,7 +70,7 @@ Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit
 
 <The following is supposed to be repeated for each group member>
 
-Group member Nitesh
+### Group member Nitesh
 
 Test 1 `test_terminal_support.py`
 Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/183bca33652a1c7af6003b1070b249b51dd2a517
@@ -88,7 +88,7 @@ Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/co
 
 <Test 2>
 
-Group member Ismail
+### Group member Ismail
 
 Test 1 `test_jobsarguments.py`
 Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/7693264a51fad091fd77c4d30271b59df69d9738
@@ -100,6 +100,8 @@ Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/co
 ###Screenshot new coverage
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
+
+### Group member Ismail
 
 Test 1 `test_colourise.py`
 Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/36b4b7132fde923dbf8dd9605bcc769849114c2c
