@@ -1268,13 +1268,38 @@ def validate_html_static_path(app: Sphinx, config: Config) -> None:
             config.html_static_path.remove(entry)
 
 
+branch_coverage = {
+    "branch_601": False,
+    "branch_602": False
+}
+
+
 def validate_html_logo(app: Sphinx, config: Config) -> None:
     """Check html_logo setting."""
     if (config.html_logo and
             not path.isfile(path.join(app.confdir, config.html_logo)) and
             not isurl(config.html_logo)):
+        branch_coverage["branch_601"] = True 
         logger.warning(__('logo file %r does not exist'), config.html_logo)
         config.html_logo = None
+    branch_coverage["branch_602"] = True
+
+def print_coverage():
+    for branch, hit in branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+
+from unittest.mock import Mock
+app = Mock()
+app.confdir = os.getcwd() 
+config = Mock()
+
+config.html_logo = None
+validate_html_logo(app, config)
+print_coverage()
+
+config.html_logo = 'non_existing_logo.png'
+validate_html_logo(app, config)
+print_coverage()
 
 
 def validate_html_favicon(app: Sphinx, config: Config) -> None:
