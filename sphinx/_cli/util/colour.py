@@ -18,7 +18,9 @@ branch_coverage = {
     "branch_102": False,
     "branch_103": False,
     "branch_104": False,
-    "branch_105": False          
+    "branch_105": False,
+    "branch_201": False,
+    "branch_202": False          
 }
 
 
@@ -88,11 +90,13 @@ def enable_colour() -> None:
     _COLOURING_DISABLED = False
     if sys.platform == 'win32':
         colorama.init()
-
+        
 
 def colourise(colour_name: str, text: str, /) -> str:
     if _COLOURING_DISABLED:
+        branch_coverage["branch_201"] = True
         return text
+    branch_coverage["branch_202"] = True
     return globals()[colour_name](text)
 
 
@@ -145,3 +149,12 @@ blue = _create_colour_func('94')
 fuchsia = _create_colour_func('95')
 teal = _create_colour_func('96')
 white = _create_colour_func('97')
+
+result = colourise("red", "- test colourise disabled")
+print(result)
+print_coverage()
+
+enable_colour()
+result = colourise("green", "- test colourise enabled")
+print(result)
+print_coverage()
