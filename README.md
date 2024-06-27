@@ -35,17 +35,19 @@ Pytest execution guide:
 
 <The following is supposed to be repeated for each group member>
 
-### Group member: Nitesh
+#### Group member: Nitesh
 Function 1 `terminal_supports_colour()`
 
 Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/37d431075016d42e5fae9e8d246806187aed0491
 
-
-
-### Screenshot coverage results:
+coverage results:
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_colour.py_prints.png)
 
 <Provide the same kind of information provided for Function 1>
+
+Function 2 `test_pycdoeError_arg.py`
+
+Link to commit of instrumented code: https://github.com/Wavyness/sphinx/commit/084fb6d8d42a6e5c6da7784cb80e641c2fa5b9cf
 
 ### Group member: Ismail
 Function 1 `jobs_argument()`
