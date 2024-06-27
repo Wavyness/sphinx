@@ -88,6 +88,32 @@ Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/co
 
 <Test 2>
 
+Group member Ismail
+
+Test 1 `test_jobsarguments.py`
+Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/7693264a51fad091fd77c4d30271b59df69d9738
+
+### Screenshot old coverage
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_jobsarguments.png)
+
+###Screenshot new coverage
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
+
+Test 1 `test_colourise.py`
+Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/36b4b7132fde923dbf8dd9605bcc769849114c2c
+
+### Screenshot old coverage
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_colourise.png)
+
+###Screenshot new coverage
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_colourise.png)
+
+
+
 <Provide the same kind of information provided for Test 1>
 
 ### Overall
