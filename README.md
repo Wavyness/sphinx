@@ -39,44 +39,52 @@ Pytest execution guide:
 - Function 1 `terminal_supports_colour()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/37d431075016d42e5fae9e8d246806187aed0491)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_colour.py_prints.png)
 
 - Function 2 `PycodeError.__str__()`
 - Link of commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/084fb6d8d42a6e5c6da7784cb80e641c2fa5b9cf)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_pycodeerror.prints.png)
 
 #### Group member: Ismail Singopawiro
 - Function 1 `jobs_argument()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/6f1ef04a5424bf20970e3ab843d6a0fe5d87a608)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_jobsarguments_prints.png)
 
 - Function 2 `run_make_mode()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/565a4bd3a3dcee92c1fcd8afbcb9701fb3dc1b56)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_make_mode_prints.png)
 
 #### Group member: Dimitri Liauw
 - Function 1 `colourise()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/26b80a2bf76d109806be93b1e59e7b2a697f16e0)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_colourise_output.png)
 
 - Function 2 `validate_html_logo()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/b936433b7b4f69707f7e25e5edb455e37b301cda)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_validate_html_logo.png)
 
 #### Group member: Riesan Hansraj
 - Function 1 `annotation_option()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/590d7bb08a114211ebb35ab6008d238325191edc)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_annotation_prints.png)
 
 - Function 2 `ExtensionError.category()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/e7f88539f090498a97e86e0d9fa468381a6ac015)
 - Coverage results by the instrumentation:
+
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_extensionerror_prints.png)
 
 ## Coverage improvement
