@@ -42,6 +42,8 @@ Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit
 
 
 <Provide a screenshot of the coverage results output by the instrumentation>
+### Screenshot coverage results:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_colour.py_prints.png)
 
 <Function 2 name>
 
@@ -51,12 +53,16 @@ Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit
 Function 1 `jobs_argument()`
 
 Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/6f1ef04a5424bf20970e3ab843d6a0fe5d87a608
+### Screenshot coverage results:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_job_arguments_output.png)
+
 
 ### Group member: Dimitri
-### Function 1 `colourise()`
+Function 1 `colourise()`
 
 Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/26b80a2bf76d109806be93b1e59e7b2a697f16e0
-
+### Screenshot coverage results:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_colourise_output.png)
 
 
 
