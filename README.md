@@ -48,6 +48,10 @@ Pytest execution guide:
 
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_pycodeerror.prints.png)
 
+Explanation:
+The coverage improved from 0% to 100% so an improvement of 100%. The function was never called. The function is specifically a constructor of the class PycodeError.
+The function had a branch if statement that checked whether it had more than 1 argument. The other branch is that the if statement is not taken. The return value will then be different than the branch from the if statement. 
+
 #### Group member: Ismail Singopawiro
 - Function 1 `jobs_argument()`
 - Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/6f1ef04a5424bf20970e3ab843d6a0fe5d87a608)
@@ -128,11 +132,12 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_pycode_error.png)
 
 Explanation:
-
+The coverage improved from 0% to 100% so an improvement of 100%. The function was never called. The function is specifically a constructor of the class PycodeError.
+The function had a branch if statement that checked whether it had more than 1 argument. The other branch is that the if statement is not taken. The return value will then be different than the branch from the if statement. 
 
 ### Group member Ismail Singopawiro
 
-Test 1 `test_jobsarguments.py`
+Test 1 `test_jobs_argument.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/7693264a51fad091fd77c4d30271b59df69d9738)
 
 - Screenshot old coverage
@@ -144,6 +149,9 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_jobsarguments.png)
+
+Explanation:
+The coverage got improved by 100%. We achieved this by implementing the instrumentation to the jobs_argument. With this, we could see for which specific inputs the branches could be hit. The branches would be hit when the parameter is equal to "auto". If it is not equal to "auto" it would go either go to branch_3 if jobs is smaller or equal to 0, or branch_4 if it is bigger than 0. Based on this we could add test cases where the inputs are auto, 123 and 0. Based on this we added asserts based on the correct values.
 
 Test 2 `test_run_make_mode.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/fb1b43c45a221e09c32b29a2425fb5f57bcf4b32)
