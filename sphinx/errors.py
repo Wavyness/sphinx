@@ -40,6 +40,15 @@ class ApplicationError(SphinxError):
 
     category = 'Application error'
 
+branch_coverage_function_2 = {
+    "branch_701": False,
+    "branch_702": False,
+}
+
+def print_coverage_extension():
+    for branch, hit in branch_coverage_function_2.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+
 
 class ExtensionError(SphinxError):
     """Extension error."""
@@ -55,8 +64,10 @@ class ExtensionError(SphinxError):
     @property
     def category(self) -> str:  # type: ignore[override]
         if self.modname:
+            branch_coverage_function_2["branch_701"] = True
             return 'Extension error (%s)' % self.modname
         else:
+            branch_coverage_function_2["branch_702"] = True
             return 'Extension error'
 
     def __repr__(self) -> str:
@@ -70,6 +81,13 @@ class ExtensionError(SphinxError):
             return f'{parent_str} (exception: {self.orig_exc})'
         return parent_str
 
+error_without_modname = ExtensionError("An extension error occurred")
+print(error_without_modname.category)
+print_coverage_extension()
+
+error_with_modname = ExtensionError("An extension error occurred", modname="mod")
+print(error_with_modname.category)
+print_coverage_extension()
 
 class BuildEnvironmentError(SphinxError):
     """BuildEnvironment error."""
@@ -151,7 +169,7 @@ def print_coverage():
     for branch, hit in branch_coverage.items():
         print(f"{branch} was {'hit' if hit else 'not hit'}")
 
-
+print("\n\n\n\n")
 error_one_arg = PycodeError("argument 1")
 print(str(error_one_arg))
 print_coverage()
