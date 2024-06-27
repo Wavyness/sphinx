@@ -75,7 +75,7 @@ Group member Nitesh
 Test 1 `test_terminal_support.py`
 Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/183bca33652a1c7af6003b1070b249b51dd2a517
 
-###Screenshot old coverage
+### Screenshot old coverage
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_terminalsupports.png)
 
