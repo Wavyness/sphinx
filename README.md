@@ -83,7 +83,6 @@ Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/co
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_terminal_supports.png)
 
-<Provide a screenshot of the new coverage results>
 
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
 
