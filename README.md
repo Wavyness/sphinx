@@ -108,6 +108,12 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_terminal_supports.png)
 
+Explanation:
+The coverage improved from 0% to 86% so an improvement of 86%. The old terminal_supports_colour had 10 statements.
+The instrumentation gave the function 5 more statements. test_terminal_support_py calls the different branches in the function.
+Calling each branch gave it a large improvement in coverage. 
+
+
 Test 2 `test_pycodeError_arg.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/2fe72f30421129f6e4163e64b330bf291707292c)
 
@@ -120,6 +126,9 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_pycode_error.png)
+
+Explanation:
+
 
 ### Group member Ismail Singopawiro
 
@@ -192,6 +201,13 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_annotation_option.png)
 
+Explanation:
+the code coverage improved by 100%.
+
+the first step was to make the instrumentation to see which branches it would hit. and also which values would make sure it would hit.
+after that. the new test file was created with the information of the branch test.
+the test used assertions to control the results.
+
 Test 2 `test_extensionerror_category.py`
 Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphinx/commit/85899c0d236958b2d2dd3ad1b2caf486f706c151)
 
@@ -205,6 +221,13 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 ![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
 ![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_test_extensionerror.png)
 
+Explanation:
+the code coverage of the second function was also improved by 100%
+
+the way the second function was improved was almost the same as the first one.
+there was again no test file testing the function so a new test file was created to make sure 
+the function was called and tested based on the branch test performed.
+
 ### Overall
 
 <Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)>
@@ -213,4 +236,6 @@ Link to commit of the new/enhanced test: [here](https://github.com/Wavyness/sphi
 
 ## Statement of individual contributions
 
-<Write what each group member did>
+A significant portion of our assignment was spent searching for the right project. This process took a lot of time due to numerous restrictions and the fact that many good projects were already taken. After weeks of searching together, we finally found a suitable project.
+
+Each team member identified and created two functions to instrument, and everyone also developed two tests for these functions. We communicated through out Discord, which helped us avoid communication issues and ensured that everyone contributed their fair share of work.
