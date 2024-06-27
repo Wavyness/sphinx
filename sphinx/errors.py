@@ -136,3 +136,16 @@ class FiletypeNotFoundError(Exception):
     """Raised by get_filetype() if a filename matches no source suffix."""
 
     pass
+
+def print_coverage():
+    for branch, hit in branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+
+
+error_one_arg = PycodeError("argument 1")
+print(str(error_one_arg))
+print_coverage()
+
+error_two_args = PycodeError("argument 1", "argument 2")
+print(str(error_two_args))
+print_coverage()
