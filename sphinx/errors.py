@@ -114,13 +114,22 @@ class SphinxParallelError(SphinxError):
         return self.message
 
 
+
+branch_coverage = {
+    "branch_501": False,
+    "branch_502": False,
+}
+
+
 class PycodeError(Exception):
     """Pycode Python source code analyser error."""
 
     def __str__(self) -> str:
         res = self.args[0]
         if len(self.args) > 1:
+            branch_coverage["branch_301"] = True 
             res += ' (exception was: %r)' % self.args[1]
+        branch_coverage["branch_302"] = True
         return res
 
 
@@ -137,6 +146,7 @@ class FiletypeNotFoundError(Exception):
 
     pass
 
+
 def print_coverage():
     for branch, hit in branch_coverage.items():
         print(f"{branch} was {'hit' if hit else 'not hit'}")
@@ -149,3 +159,4 @@ print_coverage()
 error_two_args = PycodeError("argument 1", "argument 2")
 print(str(error_two_args))
 print_coverage()
+
