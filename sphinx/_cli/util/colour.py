@@ -1,6 +1,7 @@
 """Format coloured console output."""
 
 from __future__ import annotations
+from unittest.mock import patch
 
 import os
 import sys
@@ -12,25 +13,68 @@ if sys.platform == 'win32':
 
 _COLOURING_DISABLED = True
 
+branch_coverage = {
+    "branch_101": False, 
+    "branch_102": False,
+    "branch_103": False,
+    "branch_104": False,
+    "branch_105": False          
+}
+
 
 def terminal_supports_colour() -> bool:
     """Return True if coloured terminal output is supported."""
     if 'NO_COLOUR' in os.environ or 'NO_COLOR' in os.environ:
+        branch_coverage["branch_101"] = True
         return False
     if 'FORCE_COLOUR' in os.environ or 'FORCE_COLOR' in os.environ:
+        branch_coverage["branch_102"] = True
         return True
 
     try:
         if not sys.stdout.isatty():
+            branch_coverage["branch_103"] = True
             return False
     except (AttributeError, ValueError):
+        branch_coverage["branch_104"] = True
         # Handle cases where .isatty() is not defined, or where e.g.
         # "ValueError: I/O operation on closed file" is raised
         return False
 
     # Do not colour output if on a dumb terminal
+    branch_coverage["branch_105"] = True
     return os.environ.get('TERM', 'unknown').lower() not in {'dumb', 'unknown'}
 
+def print_coverage():
+    for branch, hit in branch_coverage.items():
+        print(f"{branch} was {'hit' if hit else 'not hit'}")
+
+
+os.environ['NO_COLOUR'] = '1'
+result = terminal_supports_colour()
+del os.environ['NO_COLOUR']
+print(result)
+print_coverage()
+
+os.environ['FORCE_COLOUR'] = '1'
+result = terminal_supports_colour()
+del os.environ['FORCE_COLOUR']
+print(result)
+print_coverage()
+
+with patch('sys.stdout.isatty', return_value=False):
+    result = terminal_supports_colour()
+    print(result)
+    print_coverage()
+
+with patch('sys.stdout.isatty', side_effect=ValueError("I/O operation on closed file")):
+    result = terminal_supports_colour()
+    print(result)
+    print_coverage()
+
+result = terminal_supports_colour()
+print(result)
+print_coverage()
 
 def disable_colour() -> None:
     global _COLOURING_DISABLED
