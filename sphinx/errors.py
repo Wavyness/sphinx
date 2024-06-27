@@ -127,9 +127,9 @@ class PycodeError(Exception):
     def __str__(self) -> str:
         res = self.args[0]
         if len(self.args) > 1:
-            branch_coverage["branch_301"] = True 
+            branch_coverage["branch_501"] = True 
             res += ' (exception was: %r)' % self.args[1]
-        branch_coverage["branch_302"] = True
+        branch_coverage["branch_502"] = True
         return res
 
 
