@@ -41,11 +41,9 @@ Function 1 `terminal_supports_colour()`
 Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/37d431075016d42e5fae9e8d246806187aed0491
 
 
-<Provide a screenshot of the coverage results output by the instrumentation>
+
 ### Screenshot coverage results:
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_colour.py_prints.png)
-
-<Function 2 name>
 
 <Provide the same kind of information provided for Function 1>
 
