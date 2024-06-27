@@ -35,36 +35,49 @@ Pytest execution guide:
 
 <The following is supposed to be repeated for each group member>
 
-#### Group member: Nitesh
-Function 1 `terminal_supports_colour()`
-
-Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/37d431075016d42e5fae9e8d246806187aed0491
-
-coverage results:
+#### Group member: Nitesh Shahatoe
+- Function 1 `terminal_supports_colour()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/37d431075016d42e5fae9e8d246806187aed0491)
+- Coverage results by the instrumentation:
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_colour.py_prints.png)
 
-<Provide the same kind of information provided for Function 1>
+- Function 2 `PycodeError.__str__()`
+- Link of commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/084fb6d8d42a6e5c6da7784cb80e641c2fa5b9cf)
+- Coverage results by the instrumentation:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_pycodeerror.prints.png)
 
-Function 2 `test_pycdoeError_arg.py`
+#### Group member: Ismail Singopawiro
+- Function 1 `jobs_argument()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/6f1ef04a5424bf20970e3ab843d6a0fe5d87a608)
+- Coverage results by the instrumentation:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_jobsarguments_prints.png)
 
-Link to commit of instrumented code: https://github.com/Wavyness/sphinx/commit/084fb6d8d42a6e5c6da7784cb80e641c2fa5b9cf
+- Function 2 `run_make_mode()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/565a4bd3a3dcee92c1fcd8afbcb9701fb3dc1b56)
+- Coverage results by the instrumentation:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_make_mode_prints.png)
 
-### Group member: Ismail
-Function 1 `jobs_argument()`
-
-Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/6f1ef04a5424bf20970e3ab843d6a0fe5d87a608
-### Screenshot coverage results:
-![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_job_arguments_output.png)
-
-
-### Group member: Dimitri
-Function 1 `colourise()`
-
-Link to commit of instrumented code: https://github.com/sphinx-doc/sphinx/commit/26b80a2bf76d109806be93b1e59e7b2a697f16e0
-### Screenshot coverage results:
+#### Group member: Dimitri Liauw
+- Function 1 `colourise()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/26b80a2bf76d109806be93b1e59e7b2a697f16e0)
+- Coverage results by the instrumentation:
 ![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/screenshot_colourise_output.png)
 
+- Function 2 `validate_html_logo()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/b936433b7b4f69707f7e25e5edb455e37b301cda)
+- Coverage results by the instrumentation:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_validate_html_logo.png)
 
+#### Group member: Riesan Hansraj
+- Function 1 `annotation_option()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/590d7bb08a114211ebb35ab6008d238325191edc)
+- Coverage results by the instrumentation:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_annotation_prints.png)
+
+- Function 2 `ExtensionError.category()`
+- Link to commit of instrumented code: [here](https://github.com/Wavyness/sphinx/commit/e7f88539f090498a97e86e0d9fa468381a6ac015)
+- Coverage results by the instrumentation:
+![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/instrumentation_extensionerror_prints.png)
 
 ## Coverage improvement
 
@@ -78,12 +91,12 @@ Test 1 `test_terminal_support.py`
 Link to commit of the new/enhanced test: https://github.com/sphinx-doc/sphinx/commit/183bca33652a1c7af6003b1070b249b51dd2a517
 
 ### Screenshot old coverage
-![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
-![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_terminalsupports.png)
+![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![Old-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_old_terminalsupports.png)
 
 ###Screenshot new coverage
-![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
-![Screenshot](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_terminal_supports.png)
+![Header](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/html_file_layout.png)
+![New-Cov](https://github.com/Wavyness/sphinx/blob/master/doc/screenshots/coverage_results/coverage_new_terminal_supports.png)
 
 
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
